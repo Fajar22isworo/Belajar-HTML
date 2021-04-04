@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- Paragraf -->
+    <i><h2>Belajar Paragraf</h2></i>
+    <p>Ini adalah paragraf 1</p>
+    <p>Ini adalah paragraf 2</p>
+    <!-- Bold (b) Italic(i) Underline(u) -->
+    <!-- br digunakan untuk break line atau buat baris baru -->
+    <b>Ini adalah teks dengan menggunakan cetak tebal</b><br>
+    <i>>Ini adalah teks dengan menggunakan cetak miring</i><br>
+    <u>Ini adalah teks dengan menggunakan garis bawah</u>
+    <br><br><hr>
+    <!-- hr digunakan untuk membuat garis horizontal -->
+
+
+    <!-- Heading (judul) -->
+    <i><h2>Belajar heading</h2></i>
+    <h1>Praktikum 2 IF03</h1>
+    <h2>Praktikum 2 IF03</h2>
+    <h3>Praktikum 2 IF03</h3>
+    <h4>Praktikum 2 IF03</h4>
+    <h5>Praktikum 2 IF03</h5>
+    <h6>Praktikum 2 IF03</h6>
+    <hr>
+
+
+    <!-- List -->
+    <i><h2>Belajar List</h2></i>
+    <h3>Makanan kesukaan saya</h3>
+	<!-- nilai dari atribut type ul yaitu disc,square,circle -->
+	<ul type="circle">
+		<li>Nasi Goreng</li>
+		<li>Sate</li>
+		<li>Bakso</li>
+	</ul>
+
+	<h3>Klasemen LA LIGA</h3>
+	<!-- nilai atribut type yaitu 1,A,a,I,i -->
+	<ol type="i">     
+		<li>Barcelona</li>
+		<li>Real Madrid</li>
+		<li>Atleticho Madrid</li>
+	</ol>
+
+	<dl>
+		<dt>Bola</dt>
+		<dd>Berbentuk bola, digunakan untuk bermain sepak bola.</li>
+		<dt>Gelas</dt>
+		<dd>Digunakan untuk minum.</li>
+	</dl>
+	<hr>
+
+    <!-- Hyperlink -->
+    <!-- Eksternal link -->
+    <i><h2>Belajar Hyperlink</h2></i>
+	<p>Klik <a href="http://www.google.com" target="_blank">disini</a> untuk langsung masuk ke web google</p>
+
+	<!-- Internal link --> 
+	<!-- value target yaitu _self, _blank -->
+	<p>Klik <a href="halaman2.html">disini</a> untuk masuk ke halaman 2</p>
+
+	<!-- Relatif URL -->
+	<p>Klik <a href="user/user.html">disini</a> untuk ke halaman user</p>
+	<p>Klik <a href="admin/admin.html">disini</a> untuk ke halaman admin</p>
+    <br><br><hr>
+
+
+
+    <!-- Image -->
+    <!-- img -> atributnya 1. alt
+	2. title
+	3. width
+	4. height -->
+    <i><h2>Belajar Image</h2></i>
+	<!-- Eksternal source/ link online -->
+	<img src="https://1.bp.blogspot.com/-adPwkANrQu0/XWXmz-EQuqI/AAAAAAAAAiA/mgDMq0jgdd8K-UBpt5H7SRLmdifYkbXCgCLcBGAs/s320/38.AMIKOMY.png">
+
+	<!-- Internal source/ link dari folder yang ada di komputer kita -->
+	<img src="logo_amikom.jpg" alt="Gambar tidak tampil" title="Logo Amikom Yogyakarta" width="10%" height="10%">
+
+	<!-- Gambar dengan hyperlink -->
+	<a href="https://home.amikom.ac.id/" target="_blank">
+		<img src="logo_amikom.jpg" alt="Gambar tidak tampil" title="Logo Amikom Yogyakarta" width="20%" height="10%">
+	</a>
+    <br><br><hr>
+
+
+    <!-- Form -->
+    <i><h2>Belajar FORM + TABEL</h2></i>
+    <form>
+        <!-- textbox -->
+        <label for="username">Nama</label>
+        <input type="text" id="username">
+        <!-- password --> 
+        <label for="password">Password</label>
+        <input type="password" id="password">
+        <!-- Radio button -->
+        <br>
+        <label for="jeniskelamin">Jenis Kelamin</label>
+        <input type="radio" name="jeniskelamin" id="jeniskelamin">Laki-Laki
+        <input type="radio" name="jeniskelamin" id="jeniskelamin">Perempuan
+        <br>
+        <!-- Checkbox -->
+        Hobby 
+        <input type="checkbox" id="rebahan">
+        <label for="rebahan">Rebahan</label>
+        <!-- Drop down -->
+        <br>
+        <label for="kelas">Kelas</label>
+        <select id="kelas">
+            <option>Pilih Kelas ...</option>
+            <option>IF-03</option>
+            <option>IF-02</option>
+            <option>IF-11</option>
+        </select>
+        <!-- Textarea -->
+        <br>
+        <label for="dekskripsi">Dekskripsi Diri</label>
+        <textarea id="dekskripsi" cols="100" rows="5"></textarea>
+        <!-- button -->
+        <br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+
+<br><br>
+    <h2>FORM BIODATA</h2>
+    <table border="1" cellspacing="0" cellpadding="5">
+        <tr>
+            <td>Nama</td>
+            <td>:</td>
+            <td><input type="text" id="username"><br></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td>:</td>
+            <td> <input type="password" id="password"><br></td>
+        </tr>
+        <tr>
+            <td>Jenis Kelamin</td>
+            <td>:</td>
+            <td> <input type="radio" name="jeniskelamin" id="jeniskelamin">Laki-Laki
+                <input type="radio" name="jeniskelamin" id="jeniskelamin">Perempuan</td>
+        </tr>
+        <tr>
+            <td>Kelas</td>
+            <td>:</td>
+            <td> 
+                <select>
+                <option>Pilih Kelas ...</option>
+                <option>IF-03</option>
+                <option>IF-02</option>
+                <option>IF-11</option>
+            </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Deskripsi Diri</td>
+            <td>:</td>
+            <td><textarea id="dekskripsi" cols="50" rows="5"></textarea></td>
+        </tr>
+        <tr>
+            <td colspan="3">  <button type="submit">Submit</button>
+                <button type="reset">Reset</button></td>
+        </tr>
+    </table>
+    <br><br>
+    <!-- colspan rowspan tabel -->
+    <table border="1">
+        <tr>
+            <td colspan="2">coslpan=2</td>
+            <td>1,3</td>
+        </tr>
+        <tr>
+            <td rowspan="2">rowspan=2</td>
+            <td>2,2</td>
+            <td>2,3</td>
+        </tr>
+        <tr>
+            <td>3,2</td>
+            <td>3,3</td>
+        </tr>
+    </table>
+
+</body>
+</html>

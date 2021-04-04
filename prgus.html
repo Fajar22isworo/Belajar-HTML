@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">   
+
+</head>
+
+<body> 
+  <div class="container  bg-secondary text-white p-3 my-3">
+    <h1>Hello world</h1>
+    <p id="tx">Good morning everybody. Lets start this activity with smile..</p>
+    <button class="btn btn-primary" onclick="changetext()">Do a magic</button>
+    <button class="btn btn-info" onclick="changestyle()">Set color</button>
+  </div>
+<script>
+  var text= document.getElementById("tx")
+  function changetext(){
+            text.innerHTML = "Everything has change. Stay at home is better..";
+        }
+        function changestyle(){
+            text.classList.add("text-success");
+        }
+        <p id="tx2">Tetap semangat belajar & jaga kesehatan</p> 
+<button class="btn btn-success" onclick="showtext()">Show me</button> 
+var text2 = document.getElementById("tx2");
+        text2.style.display = "none";
+        function showtext(){
+            text2.style.display = "block";
+        }
+</script>
+
+
+
+
+
+
+
+<!--<script>
+  var nama = prompt("Inputkan Nama Anda");
+  document.write("Hai "+ nama);
+  window.alert("Hai, " + nama);
+</script>-->
+<!--<script>
+  function hitung(a, b){
+      document.write("<br>"+"Pertambahan A dan B = ");
+      document.write(a+b);
+  }
+</script>
+<input type="button" name="button" value="Klik It" onclick=hitung(9,8)>-->
+  
+</body>
+</html>
